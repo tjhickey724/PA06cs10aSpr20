@@ -17,10 +17,10 @@ def play_hangman():
 
 
     while (want_to_play):
-        guessed_letters = []
+        guessed_letters = ['a']
         guesses_left = 6
         word = "cat" #generate_random_word()
-        letter = 'a' #"ask the user for a letter"
+        letter = input("Enter a letter: ") #"ask the user for a letter"
         done = False
         while not done:
             if letter in guessed_letters:
